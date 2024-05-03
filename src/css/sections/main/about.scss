@@ -37,5 +37,56 @@
 	}
 	&__item {
 		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
+}
+
+.cart {
+	overflow: hidden;
+	position: relative;
+	&:hover &__box {
+		transform: translateY(0);
+	}
+
+	&__number {
+		position: absolute;
+		top: 1.25rem;
+		left: 1.25rem;
+		color: #91b3fa;
+		font-size: 1.5rem;
+		font-weight: 500;
+		line-height: 1.8rem;
+		opacity: 0.2;
+	}
+	&__title {
+		color: #4b6db4;
+		font-size: 1.25rem;
+		font-weight: 500;
+		line-height: 1.5rem;
+		width: 9.75rem;
+		text-align: center;
+	}
+	&__box {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 1.25rem;
+		background: #91b3fa;
+		transform: translateY(100%);
+		transition: 150ms all;
+	}
+	&__text {
+		color: rgba(255, 255, 255, 0.8);
+		line-height: 1.2rem;
+	}
+}
+.title-box {
+	color: #fff;
+	margin-bottom: 0.75rem;
+	text-align: start;
+	width: 100%;
 }

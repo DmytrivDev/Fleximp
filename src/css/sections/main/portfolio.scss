@@ -1,0 +1,78 @@
+.portfolio {
+	&__body {
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 3.12rem;
+	}
+	&__title {
+	}
+	&__text {
+		width: 46.875rem;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+		margin-bottom: 3.12rem;
+	}
+	&__item {
+		display: flex;
+		gap: 1.25rem;
+	}
+	&__img-wrapp {
+		flex-shrink: 0;
+		width: 46.875rem;
+		position: relative;
+	}
+	&__content {
+		padding: 3.125rem;
+		transition: 150ms all;
+		&:hover {
+			background-color: #dee8fe;
+		}
+		h3 {
+			font-size: 1.5rem;
+			font-weight: 600;
+			line-height: 1.8rem;
+			margin-bottom: 0.75rem;
+		}
+		p {
+			color: rgba(0, 0, 40, 0.7);
+			font-size: 1.125rem;
+			margin-bottom: 1.88rem;
+		}
+		a {
+			width: fit-content;
+			color: #91b3fa;
+			font-size: 1.125rem;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			gap: 0.75rem;
+			transition: 150ms all;
+			img {
+				width: 1.5rem;
+				height: 1.5rem;
+				filter: brightness(0) saturate(100%) invert(63%) sepia(72%)
+					saturate(624%) hue-rotate(190deg) brightness(103%) contrast(96%);
+			}
+			&:hover {
+				gap: 1.1rem;
+			}
+		}
+	}
+	&__link {
+		display: flex;
+		justify-content: center;
+		img {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+		a:hover img {
+			filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+				brightness(100%) contrast(100%);
+		}
+	}
+}

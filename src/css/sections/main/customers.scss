@@ -1,0 +1,17 @@
+.customers {
+	&_title {
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(5, 8.5625rem);
+		grid-template-rows: repeat(2, 7.125rem);
+		gap: 3.75rem;
+	}
+	&__item {
+		background-color: #dee8fe;
+	}
+}
