@@ -1,0 +1,15 @@
+html {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 86.250em;
+    padding: 0 2.500em;
+}
+
+
+@media screen and (max-width: 1380px) {
+    html {
+        font-size: 1.16vw;
+    }
+}
