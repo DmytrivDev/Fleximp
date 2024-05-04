@@ -43,6 +43,9 @@
 			color: rgba(0, 0, 40, 0.7);
 		}
 	}
+	&__panel {
+		transition: 250ms all !important;
+	}
 }
 
 .ac {
@@ -75,10 +78,8 @@
 }
 .is-active {
 	background-color: #dee8fe !important;
-	.services__box {
-		p {
-			padding-top: 0.75em;
-		}
+	.services__panel {
+		padding-top: 0.75em;
 	}
 	.ac-trigger {
 		img {
