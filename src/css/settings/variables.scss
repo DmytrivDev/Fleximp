@@ -11,6 +11,7 @@ body {
 }
 .sectuon-info {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 3.12rem;
 	&__text {
@@ -24,10 +25,13 @@ body {
 	line-height: 2.7rem;
 }
 .text {
+	line-height: 1.75rem;
 	font-size: 1.25rem;
 }
 
 .btn-def {
+	line-height: 1.75rem;
+	font-size: 1.25rem;
 	display: block;
 	padding: 0.75rem 2.25rem;
 	color: #fff;
@@ -39,6 +43,8 @@ body {
 	}
 }
 .link-def {
+	line-height: 1.75rem;
+	font-size: 1.25rem;
 	width: fit-content;
 	display: flex;
 	align-items: center;
@@ -55,6 +61,8 @@ body {
 	}
 }
 .link-second {
+	line-height: 1.75rem;
+	font-size: 1.25rem;
 	width: fit-content;
 	display: flex;
 	align-items: center;

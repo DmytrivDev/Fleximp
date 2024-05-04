@@ -10,14 +10,15 @@
 	&__title {
 		margin-bottom: 1rem;
 	}
-	&__text {
-		color: rgba(0, 0, 40, 0.7);
+	&__text-box {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
 		width: 41.375rem;
 		margin-bottom: 3.12rem;
-		span {
-			display: block;
-			margin-bottom: 1rem;
-		}
+	}
+	&__text {
+		color: rgba(0, 0, 40, 0.7);
 	}
 	&__link {
 		img {

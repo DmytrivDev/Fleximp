@@ -8,6 +8,11 @@ const instSlider = () => {
     const options = {
       type: 'fade',
       arrows: false,
+      autoplay: true,
+      interval: 3000,
+      rewind: true,
+      speed: 2000,
+      pagination: false,
     };
 
     new Splide(slider, options).mount();
