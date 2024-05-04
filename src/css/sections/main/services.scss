@@ -2,14 +2,10 @@
 	&__body {
 	}
 	&__info {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 3.12rem;
 	}
 	&__tilte {
 	}
 	&__text {
-		width: 46.875rem;
 	}
 	&__wrapp {
 		display: flex;
@@ -18,8 +14,8 @@
 	}
 	&__img-wrapp {
 		flex-shrink: 0;
-		width: 29.375rem;
-		height: 28.5rem;
+		width: 30rem;
+		height: 30rem;
 		position: relative;
 	}
 	&__content {

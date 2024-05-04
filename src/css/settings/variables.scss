@@ -9,6 +9,14 @@ body {
 .body-wrapp {
 	padding: 6.25rem 0;
 }
+.sectuon-info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3.12rem;
+	&__text {
+		width: 46.875rem;
+	}
+}
 
 .sub-title {
 	font-size: 2.25rem;
