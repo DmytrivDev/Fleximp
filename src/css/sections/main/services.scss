@@ -43,7 +43,7 @@
 			line-height: 1.8rem;
 		}
 		p {
-			padding-top: 0.75em;
+			transition: 250ms all !important;
 			color: rgba(0, 0, 40, 0.7);
 		}
 	}
@@ -52,13 +52,14 @@
 .ac {
 	margin: 0 !important;
 	border: none !important;
+	transition: 250ms all !important;
 }
 .ac-trigger {
 	padding: 1.5rem 2.5rem !important;
 	font: unset !important;
 	color: inherit !important;
 	margin: 0 !important;
-	background-color: #dee8fe !important;
+	background-color: transparent !important;
 	display: flex !important;
 	gap: 1.25rem !important;
 	span {
@@ -66,7 +67,26 @@
 		font-weight: 500;
 		line-height: 1.8rem;
 	}
+	img {
+		width: 1.875rem;
+		height: 1.875rem;
+		transition: 250ms all !important;
+		opacity: 0;
+	}
 }
 .ac-trigger::after {
 	display: none;
+}
+.is-active {
+	background-color: #dee8fe !important;
+	.services__box {
+		p {
+			padding-top: 0.75em;
+		}
+	}
+	.ac-trigger {
+		img {
+			opacity: 1;
+		}
+	}
 }
