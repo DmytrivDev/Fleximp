@@ -27,23 +27,24 @@
 		gap: 2.5rem;
 	}
 	.menu-item-has-children {
-		position: relative;
+		& > a {
+			display: inline-flex;
+			align-items: center;
+		}
 		& > a::after {
 			content: "";
-			position: absolute;
-			top: 50%;
-			right: -1.1rem;
+			display: block;
+			margin-left: 0.5rem;
 			width: 0.75rem;
 			height: 0.75rem;
 			transition: 250ms all;
-			transform: translateY(-50%);
 			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M5.58607 8.28358L1.60357 4.10383C1.53709 4.03409 1.5 3.94143 1.5 3.84508C1.5 3.74872 1.53709 3.65607 1.60357 3.58633L1.60807 3.58183C1.6403 3.5479 1.6791 3.52089 1.7221 3.50243C1.7651 3.48397 1.8114 3.47445 1.8582 3.47445C1.90499 3.47445 1.9513 3.48397 1.9943 3.50243C2.0373 3.52089 2.07609 3.5479 2.10832 3.58183L5.85832 7.51783L9.60682 3.58183C9.63905 3.5479 9.67785 3.52089 9.72085 3.50243C9.76385 3.48397 9.81015 3.47445 9.85695 3.47445C9.90374 3.47445 9.95005 3.48397 9.99305 3.50243C10.036 3.52089 10.0748 3.5479 10.1071 3.58183L10.1116 3.58633C10.1781 3.65607 10.2151 3.74872 10.2151 3.84508C10.2151 3.94143 10.1781 4.03409 10.1116 4.10383L6.12907 8.28358C6.09405 8.32034 6.05193 8.3496 6.00526 8.3696C5.95859 8.38959 5.90834 8.3999 5.85757 8.3999C5.8068 8.3999 5.75656 8.38959 5.70989 8.3696C5.66322 8.3496 5.62109 8.32034 5.58607 8.28358Z' fill='white'/%3E%3C/svg%3E");
-			background-size: 0.75rem;
 			background-repeat: no-repeat;
 			background-position: center;
+			background-size: contain;
 		}
 		&:hover > a::after {
-			transform: translateY(-50%) rotateX(180deg);
+			transform: rotateX(180deg);
 		}
 	}
 	.menu-item {
@@ -71,9 +72,6 @@
 		}
 		&:hover .header__menu-link {
 			color: #91b3fa;
-			img {
-				transform: rotate3d(1, 0, 0, 180deg);
-			}
 		}
 		&:hover > .sub-menu {
 			opacity: 1;
@@ -90,17 +88,7 @@
 		}
 	}
 	&__menu-link {
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
 		transition: 250ms all;
-		img {
-			transition: 250ms all;
-			width: 0.9rem;
-			height: 0.9rem;
-			filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
-				saturate(7494%) hue-rotate(134deg) brightness(100%) contrast(102%);
-		}
 	}
 
 	&__part {
