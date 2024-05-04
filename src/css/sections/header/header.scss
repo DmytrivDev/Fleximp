@@ -1,4 +1,136 @@
 .header {
 	padding: 1.25rem 0;
 	background: #000028;
+
+	&__body {
+	}
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 6.5625rem;
+			height: 2.0625rem;
+			filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+				saturate(7494%) hue-rotate(134deg) brightness(100%) contrast(102%);
+		}
+	}
+
+	&__menu-list {
+		display: flex;
+		align-items: center;
+		gap: 2.5rem;
+	}
+	&__menu-item {
+		position: relative;
+		white-space: nowrap;
+		z-index: 1;
+		transition: 250ms all;
+		.menu-list {
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+			left: 0;
+			top: calc(100% + 0.7rem);
+			background-color: #0f0f24;
+			display: flex;
+			flex-direction: column;
+			transition: 250ms all;
+			a {
+				display: block;
+				padding: 0.4rem 1rem;
+				&:hover {
+					background: rgba(255, 255, 255, 0.1);
+				}
+			}
+		}
+		&:hover .header__menu-link {
+			color: #91b3fa;
+			img {
+				transform: rotate3d(1, 0, 0, 180deg);
+			}
+		}
+		&:hover > .menu-list {
+			opacity: 1;
+			visibility: visible;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 0.7rem;
+				transform: translateY(-100%);
+			}
+		}
+	}
+	&__menu-link {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		img {
+			transition: 250ms all;
+			width: 0.9rem;
+			height: 0.9rem;
+			filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+				saturate(7494%) hue-rotate(134deg) brightness(100%) contrast(102%);
+		}
+	}
+
+	&__part {
+		display: flex;
+		align-items: center;
+		gap: 2.5rem;
+	}
+	&__lang-list {
+		display: flex;
+		align-items: center;
+		gap: 1.1rem;
+		position: relative;
+		&::after {
+			content: "";
+			background-color: #fff;
+			position: absolute;
+			width: 0.0625rem;
+			height: 1.0625rem;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}
+	&__lang-item {
+		a {
+			color: #fff;
+			font-size: 0.875rem;
+			line-height: 1.05rem;
+			opacity: 0.4;
+			transition: 150ms all;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	&__log {
+		flex-shrink: 0;
+		border: 1px solid #fff;
+		padding: 0.75rem 1.4rem;
+		transition: 150ms all;
+		&:hover {
+			color: #000028;
+			background-color: #fff;
+		}
+	}
+}
+
+.menu-list {
+}
+.menu-item {
+}
+
+.lang-item {
 }
