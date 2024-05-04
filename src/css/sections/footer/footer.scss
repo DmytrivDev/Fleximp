@@ -1,3 +1,125 @@
 .footer {
 	padding: 6.25rem 0 1.875rem 0;
+	background: #000028;
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 6.25rem;
+	}
+	&__above {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__info {
+		width: 32.5rem;
+	}
+	&__title {
+		color: #fff;
+		margin-bottom: 1rem;
+	}
+	&__text {
+		color: rgba(255, 255, 255, 0.7);
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+		width: 33.125rem;
+	}
+	&__input {
+		background-color: transparent;
+		color: #fff;
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+		width: 100%;
+		border-bottom: 1px solid #fff;
+		padding-bottom: 0.75rem;
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.4);
+		}
+	}
+	&__btn {
+		align-self: start;
+	}
+	&__under {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+	&__direction {
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+	}
+	&__logo {
+		align-self: start;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 6.5625rem;
+			height: auto;
+			filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+				saturate(7494%) hue-rotate(134deg) brightness(100%) contrast(102%);
+		}
+	}
+	&__content {
+		display: flex;
+		gap: 5.5rem;
+	}
+	&__address {
+		display: flex;
+		gap: 0.75rem;
+		flex-direction: column;
+		font-style: normal;
+	}
+	&__contact {
+		align-self: start;
+		color: rgba(255, 255, 255, 0.7);
+		line-height: 1.4rem;
+		transition: 150ms all;
+		&:hover {
+			color: #fff;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+	&__item {
+		// width: 12.5rem;
+		line-height: 1.4rem;
+	}
+	&__link {
+		line-height: 1.4rem;
+		color: rgba(255, 255, 255, 0.7);
+		transition: 150ms all;
+		&:hover {
+			color: #fff;
+		}
+	}
+	&__rights {
+		display: flex;
+		align-items: center;
+		gap: 0.2rem;
+		span {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 1.2rem;
+		}
+	}
+	&__rights-text {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 0.75rem;
+		font-weight: 500;
+		line-height: 0.9rem;
+		a {
+			color: rgba(255, 255, 255, 0.5);
+			text-decoration-line: underline;
+		}
+	}
+}
+.footer-bolt {
+	color: #fff;
+	font-weight: 500;
 }

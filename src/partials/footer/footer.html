@@ -1,14 +1,133 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__body">
-      <h2 class="sub-title">
-        Бажаєте дізнатися більше або розпочати співпрацю?
-      </h2>
-      <p class="text">
-        Заповніть нашу контактну форму, і ми з радістю допоможемо вам втілити
-        ваші ідеї в реальність.
-      </p>
-      <button type="submit" class="btn-def">Зв’язатись зі мною</button>
+      <div class="footer__above">
+        <div class="footer__info">
+          <h2 class="footer__title sub-title">
+            Бажаєте дізнатися більше або розпочати співпрацю?
+          </h2>
+          <p class="footer__text text">
+            Заповніть нашу контактну форму, і ми з радістю допоможемо
+            вам втілити ваші ідеї в реальність.
+          </p>
+        </div>
+        <form class="footer__form">
+          <label for="name">
+            <input
+              name="name"
+              type="text"
+              id="name"
+              class="footer__input"
+              placeholder="Ваше ім’я*"
+            />
+          </label>
+          <label for="email">
+            <input
+              name="email"
+              type="email"
+              id="email"
+              class="footer__input"
+              placeholder="Пошта*"
+            />
+          </label>
+          <label for="number">
+            <input
+              name="number"
+              type="number"
+              id="number"
+              class="footer__input"
+              placeholder="Контактний номер*"
+            />
+          </label>
+          <button type="submit" class="footer__btn btn-def">
+            Зв’язатись зі мною
+          </button>
+        </form>
+      </div>
+      <div class="footer__under">
+        <div class="footer__direction">
+          <a href="./index.html" class="footer__logo">
+            <img src="./img/icon/logo.svg" alt="" />
+          </a>
+          <div class="footer__content">
+            <address class="footer__address">
+              <p class="footer__contact footer-bolt">Наші контакти</p>
+              <a href="mailto:fleximp@gmail.com" class="footer__contact">
+                fleximp@gmail.com
+              </a>
+              <a href="tel:08000001100" class="footer__contact">
+                0 800 000 11 00
+              </a>
+              <a
+                href="https://maps.app.goo.gl/dxjbgBepBaQgaq7U7"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__contact"
+              >
+                Ukraine, Kyiv
+              </a>
+            </address>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link footer-bolt">Про компанію</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Про нас</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Наша команда</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Вакансії</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Наша платформа</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer-bolt">Послуги</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Розробка веб-сайтів</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Діджитал маркетинг</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Бізнес-аналітика (BI)</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Консалтинг</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link footer-bolt">Галузі</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Фармацевтична галузь</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">E-commerce</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Логістика</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Послуги з дотримання GDPR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__rights">
+          <span>&#169;</span>
+          <p class="footer__rights-text">
+            2024. All rights reserved.
+            <a href="#">Privacy Policy.</a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
