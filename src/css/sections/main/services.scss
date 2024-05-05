@@ -76,7 +76,7 @@
 .ac-trigger::after {
 	display: none;
 }
-.is-active {
+.ac.is-active {
 	background-color: #dee8fe !important;
 	.services__panel {
 		padding-top: 0.75em;
