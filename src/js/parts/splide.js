@@ -28,22 +28,34 @@ const instSecondSlider = () => {
       type: 'loop',
       speed: 2000,
       pagination: false,
-      arrows: false,
       fixedWidth: '48.5625rem',
       gap: '3.75rem',
       focus: 'center',
       updateOnMove: true,
       perPage: 1,
       start: 0,
-      // lasses: {
-      //   arrows: 'splide__arrows reviews-arrows',
-      //   arrow: 'splide__arrow reviews-arrow',
-      //   prev: 'splide__arrow--prev reviews-prev',
-      //   next: 'splide__arrow--next reviews-next',
-      // },
     };
 
     new Splide(slider, options).mount();
   }
+
+  arrowsClicker();
 };
 instSecondSlider();
+
+function arrowsClicker() {
+  const arrows = document.querySelectorAll('.reviews-arrow');
+  const container = document.querySelector('.reviews__box');
+
+  arrows?.forEach(arrow => {
+    arrow.addEventListener('click', e => {
+      const target = e.currentTarget;
+
+      if (target.classList.contains('reviews-next')) {
+        container.querySelector('.splide__arrow--next').click();
+      } else {
+        container.querySelector('.splide__arrow--prev').click();
+      }
+    });
+  });
+}
