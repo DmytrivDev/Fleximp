@@ -55,7 +55,11 @@ const instSecondSlider = () => {
       },
     };
 
-    new Splide(slider, options).mount();
+    const splide = new Splide(slider, options).mount();
+
+    splide.on('moved', () => {
+      updateSlideNumber(splide);
+    });
   }
 
   arrowsClicker();
@@ -77,4 +81,11 @@ function arrowsClicker() {
       }
     });
   });
+}
+
+function updateSlideNumber(slide) {
+  const currentIndex = slide.index + 1;
+  const totalSlides = slide.length;
+  const spanElement = document.querySelector('.index-page');
+  spanElement.textContent = `${currentIndex}/${totalSlides}`;
 }
