@@ -28,12 +28,9 @@ const instSecondSlider = () => {
       type: 'loop',
       speed: 2000,
       pagination: false,
-      fixedWidth: '48.5625rem',
+      width: '48.5625rem',
       gap: '3.75rem',
-      focus: 'center',
       updateOnMove: true,
-      perPage: 1,
-      start: 0,
     };
 
     new Splide(slider, options).mount();
