@@ -13,6 +13,18 @@ const instSlider = () => {
       rewind: true,
       speed: 2000,
       pagination: false,
+      width: '33.125rem',
+      height: '37.8125rem',
+      breakpoints: {
+        960: {
+          width: '100%',
+          height: '22.5rem',
+        },
+        500: {
+          width: '100%',
+          height: '12.5rem',
+        },
+      },
     };
 
     new Splide(slider, options).mount();
