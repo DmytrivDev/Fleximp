@@ -24,7 +24,6 @@ body {
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 }
-
 .sub-title {
 	font-size: 2.25rem;
 	font-weight: 600;
@@ -84,4 +83,74 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+	.body-wrapp {
+		padding: 2.5rem 0;
+	}
+	.sectuon-info {
+		flex-direction: column;
+		align-items: start;
+		justify-content: start;
+		gap: 0.75rem;
+		margin-bottom: 1.88rem;
+		&__text {
+			width: 100%;
+		}
+	}
+
+	.header-text {
+		font-size: 1.125rem;
+		line-height: 1.575rem;
+		font-weight: 500;
+	}
+	.sub-title {
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+	}
+	.text {
+		line-height: 1rem;
+		font-size: 1.4rem;
+	}
+
+	.btn-def {
+		display: block;
+		padding: 0.75rem 2.25rem;
+		&:hover,
+		&:focus {
+			background-color: #e05244;
+		}
+	}
+	.link-def {
+		line-height: 1.75rem;
+		font-size: 1.25rem;
+		width: fit-content;
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		padding: 0.75rem 2.25rem;
+		color: #000028;
+		border: 1px solid #000028;
+		transition: 150ms all;
+		&:hover,
+		&:focus {
+			color: #fff;
+			background-color: #fe7062;
+			border: 1px solid transparent;
+		}
+	}
+	.link-second {
+		line-height: 1.75rem;
+		font-size: 1.25rem;
+		width: fit-content;
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		padding: 0.75rem 2.25rem;
+		color: #fff;
+		border: 1px solid transparent;
+		transition: 150ms all;
+		&:hover,
+		&:focus {
+			border: 1px solid #fff;
+		}
+	}
 }
