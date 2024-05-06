@@ -40,9 +40,19 @@ const instSecondSlider = () => {
       type: 'loop',
       speed: 2000,
       pagination: false,
+      updateOnMove: true,
       width: '48.5625rem',
       gap: '3.75rem',
-      updateOnMove: true,
+      breakpoints: {
+        960: {
+          width: '28rem',
+          gap: '2rem',
+        },
+        500: {
+          width: '18.9375rem',
+          gap: '1rem',
+        },
+      },
     };
 
     new Splide(slider, options).mount();
