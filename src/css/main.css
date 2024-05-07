@@ -22,5 +22,8 @@
 @import url('./sections/about-page/employees.scss');
 @import url('./sections/about-page/platform.scss');
 
+/* Vacancies-page */
+@import url('./sections/vacancies-page/vacancies.scss');
+
 /* Footer */
 @import url('./sections/footer/footer.scss');
