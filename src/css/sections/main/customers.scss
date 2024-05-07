@@ -1,5 +1,6 @@
 .customers {
 	&_title {
+		padding-top: 0.3em;
 	}
 	&__body {
 		display: flex;
@@ -21,6 +22,9 @@
 
 @media screen and (max-width: 960px) {
 	.customers {
+		&_title {
+			padding-top: 0;
+		}
 		&__body {
 			flex-direction: column;
 			justify-content: start;

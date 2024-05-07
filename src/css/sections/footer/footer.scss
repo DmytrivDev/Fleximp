@@ -34,6 +34,9 @@
 		width: 100%;
 		border-bottom: 1px solid #fff;
 		padding-bottom: 0.75rem;
+		&.error {
+			border-color: red;
+		}
 		&::placeholder {
 			color: rgba(255, 255, 255, 0.4);
 		}
@@ -122,6 +125,14 @@
 
 	input {
 		display: none;
+
+		&.error {
+			& + p {
+				&::before {
+					border-color: red;
+				}
+			}
+		}
 
 		&:checked {
 			& + p {
