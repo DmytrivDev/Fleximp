@@ -25,5 +25,11 @@
 /* Vacancies-page */
 @import url('./sections/vacancies-page/vacancies.scss');
 
+/* Portfolio-page */
+@import url('./sections/portfolio-page/portfolio-page.scss');
+
+/* Projects-page */
+@import url('./sections/projects-page/projects.scss');
+
 /* Footer */
 @import url('./sections/footer/footer.scss');
