@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vacancies</title>
     
-    <script type="module" crossorigin src="/Fleximp/assets/vendor-8766e12a.js"></script>
-    <script type="module" crossorigin src="/Fleximp/assets/main-d95c2311.js"></script>
-    <link rel="stylesheet" href="/Fleximp/assets/main-a0fb98d0.css">
-    <link rel="stylesheet" href="/Fleximp/assets/vendor-b7222183.css">
+    <script type="module" crossorigin src="./assets/vendor-1c60cd6a.js"></script>
+    <script type="module" crossorigin src="./assets/main-938b5eff.js"></script>
+    <link rel="stylesheet" href="./assets/vendor-b7222183.css">
+    <link rel="stylesheet" href="./assets/main-44cb021f.css">
   </head>
 
   <body class="notHome vacanciesPage">
@@ -24,7 +24,7 @@
           <span></span>
         </a>
         <a href="./index.html" class="custom-logo-link">
-          <img src="/Fleximp/assets/logo-86a29b94.svg" alt="" />
+          <img src="./assets/logo-86a29b94.svg" alt="" />
         </a>
         <ul class="header__menu-list">
           <li class="menu-item menu-item-has-children">
@@ -45,7 +45,7 @@
             </ul>
           </li>
           <li class="menu-item">
-            <a href="#" class="header__menu-link header-text"> Портфоліо </a>
+            <a href="/portfolio-page.html" class="header__menu-link header-text"> Портфоліо </a>
           </li>
           <li class="menu-item menu-item-has-children">
             <a href="#" class="header__menu-link header-text">Наші послуги</a>
@@ -127,7 +127,7 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#" class="header__menu-link header-text"> Портфоліо </a>
+        <a href="/portfolio-page.html" class="header__menu-link header-text"> Портфоліо </a>
       </li>
       <li class="menu-item menu-item-has-children">
         <a href="#" class="header__menu-link header-text">Наші послуги</a>
@@ -180,7 +180,7 @@
   <div class="container">
     <div class="vacancies__body">
       <a href="#" class="link-back">
-        <img src="/Fleximp/assets/left-6b7aef72.svg" alt="" />
+        <img src="./assets/left-6b7aef72.svg" alt="" />
         <span>Всі вакансії</span>
       </a>
       <div class="vacancies__wrapp">
@@ -324,12 +324,13 @@
             реальність.
           </p>
         </div>
-        <form class="footer__form">
+        <form class="footer__form submitForm">
           <label for="name">
             <input
               name="name"
               type="text"
               id="name"
+              data-required="true"
               class="footer__input"
               placeholder="Ваше ім’я*"
             />
@@ -339,6 +340,7 @@
               name="email"
               type="email"
               id="email"
+              data-required="true"
               class="footer__input"
               placeholder="Пошта*"
             />
@@ -346,15 +348,16 @@
           <label for="number">
             <input
               name="number"
-              type="number"
+              type="tel"
               id="number"
+              data-required="true"
               class="footer__input"
               placeholder="Контактний номер*"
             />
           </label>
           <div class="form__bottom">
             <label class="checkbox">
-              <input type="checkbox" name="agree" />
+              <input type="checkbox" data-required="true" name="agree" />
               <p>
                 <span
                   >Я даю згоду на обробку моїх персональних даних.
@@ -371,7 +374,7 @@
       <div class="footer__under">
         <div class="footer__direction">
           <a href="./index.html" class="custom-logo-link">
-            <img src="/Fleximp/assets/logo-86a29b94.svg" alt="" />
+            <img src="./assets/logo-86a29b94.svg" alt="" />
           </a>
           <div class="footer__content">
             <ul class="footer__list">
