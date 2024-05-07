@@ -4,6 +4,8 @@ import isEmpty from 'validator/lib/isEmpty';
 import axios from 'axios';
 import IMask from 'imask';
 
+import { openingPopup } from './pop-up';
+
 export const formFunc = async () => {
   const telInputs = document.querySelectorAll('input[type="tel"]');
 
@@ -31,15 +33,12 @@ export const formFunc = async () => {
     }
   }
 
-  //   function formEnd(form, status) {
-  //     if(status) {
-  //         document.getElementById('thanks').classList.add('opened');
-  //         document.querySelector('body').classList.add('overhide');
-  //     } else {
-  //         document.getElementById('error').classList.add('opened');
-  //         document.querySelector('body').classList.add('overhide');
-  //     }
-  //   }
+  function formEnd(form, status) {
+    if (status) {
+      openingPopup();
+      form.reset();
+    }
+  }
 
   const forms = document.querySelectorAll('.submitForm');
 
@@ -94,7 +93,10 @@ export const formFunc = async () => {
     }
 
     if (type === 'tel') {
-        if (isEmpty(val) || !isMobilePhone(val.replace(/[^\d+]/g, ''), ['uk-UA'])) {
+      if (
+        isEmpty(val) ||
+        !isMobilePhone(val.replace(/[^\d+]/g, ''), ['uk-UA'])
+      ) {
         errors = true;
         field.classList.add('error');
       }

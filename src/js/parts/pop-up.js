@@ -3,10 +3,15 @@ const modalBtnClose = document.querySelector('.pop-up__close');
 const modalPopup = document.querySelector('.pop-up');
 const body = document.querySelector('body');
 
-modalBtnOpen.addEventListener('click', () => {
+// modalBtnOpen.addEventListener('click', () => {
+//   modalPopup.classList.add('is-active');
+//   body.classList.add('modal-open');
+// });
+
+export const openingPopup = () => {
   modalPopup.classList.add('is-active');
   body.classList.add('modal-open');
-});
+}
 
 modalBtnClose.addEventListener('click', () => {
   modalPopup.classList.remove('is-active');
