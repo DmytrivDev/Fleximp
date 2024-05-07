@@ -1,6 +1,8 @@
 .header {
 	padding: 1.25rem 0;
 	background: #000028;
+	position: relative;
+	z-index: 20;
 
 	&__body {
 	}
@@ -16,8 +18,8 @@
 		img {
 			width: 6.5625rem;
 			height: auto;
-			filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
-				saturate(7494%) hue-rotate(134deg) brightness(100%) contrast(102%);
+			filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7494%) hue-rotate(134deg)
+				brightness(100%) contrast(102%);
 		}
 	}
 
@@ -123,6 +125,13 @@
 				opacity: 1;
 			}
 		}
+
+		&.current-lang {
+			a {
+				color: #fff;
+				opacity: 1;
+			}
+		}
 	}
 	&__log {
 		flex-shrink: 0;
@@ -132,6 +141,98 @@
 		&:hover {
 			color: #000028;
 			background-color: #fff;
+		}
+	}
+}
+.hamburger {
+	display: none;
+}
+
+@media screen and (max-width: 960px) {
+	.header {
+		&__menu-list {
+			display: none;
+		}
+		&__part {
+			display: block;
+		}
+		&__lang-list {
+			display: none;
+		}
+		&__log {
+			width: 1.6875rem;
+			height: 1.6875rem;
+			flex-shrink: 0;
+			border: none;
+			padding: 0;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: contain;
+			font-size: 0;
+			display: block;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.5 13.5C16.815 13.5 19.5 10.815 19.5 7.5C19.5 4.185 16.815 1.5 13.5 1.5C10.185 1.5 7.5 4.185 7.5 7.5C7.5 10.815 10.185 13.5 13.5 13.5ZM21 7.5C21 11.6438 17.6437 15 13.5 15C9.35625 15 6 11.6438 6 7.5C6 3.35625 9.35625 0 13.5 0C17.6437 0 21 3.35625 21 7.5ZM2.41725 21.159C1.665 21.7665 1.5 22.2218 1.5 22.5V25.5H25.5V22.5C25.5 22.2225 25.335 21.7658 24.582 21.159C23.847 20.5658 22.7505 20.0002 21.4215 19.5112C18.765 18.534 15.5647 18 13.5 18C11.4353 18 8.235 18.534 5.5785 19.5112C4.2495 20.0002 3.153 20.5658 2.41725 21.159ZM13.5 16.5C8.99475 16.5 0 18.7762 0 22.5V27H27V22.5C27 18.7762 18.006 16.5 13.5 16.5Z' fill='white'/%3E%3C/svg%3E");
+		}
+		.custom-logo-link {
+			img {
+				width: 4.625rem;
+			}
+		}
+	}
+	body {
+		&.notHome {
+			.header {
+				background: #fff;
+				&__log {
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27' fill='none'%3E%3Cg clip-path='url(%23clip0_189_1532)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.5 13.5C16.815 13.5 19.5 10.815 19.5 7.5C19.5 4.185 16.815 1.5 13.5 1.5C10.185 1.5 7.5 4.185 7.5 7.5C7.5 10.815 10.185 13.5 13.5 13.5ZM21 7.5C21 11.6438 17.6437 15 13.5 15C9.35625 15 6 11.6438 6 7.5C6 3.35625 9.35625 0 13.5 0C17.6437 0 21 3.35625 21 7.5ZM2.41725 21.159C1.665 21.7665 1.5 22.2218 1.5 22.5V25.5H25.5V22.5C25.5 22.2225 25.335 21.7658 24.582 21.159C23.847 20.5658 22.7505 20.0002 21.4215 19.5112C18.765 18.534 15.5647 18 13.5 18C11.4353 18 8.235 18.534 5.5785 19.5112C4.2495 20.0002 3.153 20.5658 2.41725 21.159ZM13.5 16.5C8.99475 16.5 0 18.7762 0 22.5V27H27V22.5C27 18.7762 18.006 16.5 13.5 16.5Z' fill='%23000028'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_189_1532'%3E%3Crect width='27' height='27' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+				}
+			}
+			.custom-logo-link {
+				img {
+					filter: none;
+					filter: invert(75%) sepia(80%) saturate(1736%) hue-rotate(187deg) brightness(95%) contrast(106%);
+				}
+			}
+		}
+	}
+	.hamburger {
+		width: 1.875rem;
+		height: 1.563rem;
+		position: relative;
+		display: block;
+
+		span {
+			height: 0.094rem;
+			width: 100%;
+			display: block;
+			background-color: #fff;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transition: 0.3s;
+			transform: translateX(-50%) translateY(-50%) rotate(0);
+
+			&:first-child {
+				top: 1px;
+			}
+
+			&:last-child {
+				top: calc(100% - 1px);
+			}
+		}
+
+		&.opened {
+			span {
+				top: 50% !important;
+				&:nth-child(2) {
+					opacity: 0;
+				}
+				&:nth-child(1) {
+					transform: translateX(-50%) translateY(-50%) rotate(45deg);
+				}
+				&:nth-child(3) {
+					transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+				}
+			}
 		}
 	}
 }

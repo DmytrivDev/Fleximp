@@ -38,7 +38,7 @@ const instSecondSlider = () => {
   if (slider) {
     const options = {
       type: 'loop',
-      speed: 2000,
+      speed: 700,
       pagination: false,
       updateOnMove: true,
       width: '48.5625rem',
