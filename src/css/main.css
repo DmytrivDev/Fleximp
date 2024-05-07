@@ -15,5 +15,11 @@
 @import url('./sections/main/customers.scss');
 @import url('./sections/main/reviews.scss');
 
+/* About-page */
+@import url('./sections/about-page/about-us.scss');
+@import url('./sections/about-page/team.scss');
+@import url('./sections/about-page/employees.scss');
+@import url('./sections/about-page/platform.scss');
+
 /* Footer */
 @import url('./sections/footer/footer.scss');

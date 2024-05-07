@@ -93,6 +93,9 @@
 		}
 		&__content {
 			padding: 1.25rem;
+			&:hover {
+				background-color: transparent;
+			}
 			h3 {
 				font-size: 1.125rem;
 				line-height: 1.575rem;
