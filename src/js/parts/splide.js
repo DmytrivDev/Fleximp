@@ -86,6 +86,9 @@ function arrowsClicker() {
 function updateSlideNumber(slide) {
   const currentIndex = slide.index + 1;
   const totalSlides = slide.length;
-  const spanElement = document.querySelector('.index-page');
-  spanElement.textContent = `${currentIndex}/${totalSlides}`;
+  const spanElements = document.querySelectorAll('.index-page');
+
+  spanElements.forEach(spanElement => {
+    spanElement.textContent = `${currentIndex}/${totalSlides}`;
+  });
 }
