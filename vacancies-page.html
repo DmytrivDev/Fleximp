@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vacancies</title>
     
-    <script type="module" crossorigin src="/Fleximp/assets/vendor-8b7a1b26.js"></script>
-    <script type="module" crossorigin src="/Fleximp/assets/main-38c0a1e8.js"></script>
-    <link rel="stylesheet" href="/Fleximp/assets/main-f786b278.css">
+    <script type="module" crossorigin src="/Fleximp/assets/vendor-8766e12a.js"></script>
+    <script type="module" crossorigin src="/Fleximp/assets/main-88eac88e.js"></script>
+    <link rel="stylesheet" href="/Fleximp/assets/main-45d6fc65.css">
     <link rel="stylesheet" href="/Fleximp/assets/vendor-b7222183.css">
   </head>
 
@@ -28,19 +28,19 @@
         </a>
         <ul class="header__menu-list">
           <li class="menu-item menu-item-has-children">
-            <a href="#" class="header__menu-link header-text">Про компанію</a>
+            <a href="/about-page.html" class="header__menu-link header-text">Про компанію</a>
             <ul class="sub-menu">
               <li>
-                <a href="#" class="header-text">Про нас</a>
+                <a href="/about-page.html#about" class="header-text">Про нас</a>
               </li> 
               <li>
-                <a href="#" class="header-text">Наша команда</a>
+                <a href="/about-page.html#team" class="header-text">Наша команда</a>
               </li>
               <li>
-                <a href="#" class="header-text">Вакансії</a>
+                <a href="/about-page.html#vacancies" class="header-text">Вакансії</a>
               </li>
               <li>
-                <a href="#" class="header-text">Наша платформа</a>
+                <a href="/about-page.html#platform" class="header-text">Наша платформа</a>
               </li>
             </ul>
           </li>
@@ -92,7 +92,7 @@
             <li class="header__lang-item"><a href="#">EN</a></li>
           </ul>
 
-          <a href="#" class="header__log header-text">Log In / Sign Up</a>
+          <a href="portal.fleximp.com" class="header__log header-text">Log In</a>
         </div>
       </nav>
     </div>
@@ -104,19 +104,25 @@
   <div class="container">
     <ul class="header__menu-list">
       <li class="menu-item menu-item-has-children">
-        <a href="#" class="header__menu-link header-text">Про компанію</a>
+        <a href="/about-page.html" class="header__menu-link header-text"
+          >Про компанію</a
+        >
         <ul class="sub-menu">
           <li>
-            <a href="#" class="header-text">Про нас</a>
-          </li>
-          <li class="current-menu-item">
-            <a href="#" class="header-text">Наша команда</a>
+            <a href="/about-page.html#about" class="header-text">Про нас</a>
           </li>
           <li>
-            <a href="#" class="header-text">Вакансії</a>
+            <a href="/about-page.html#team" class="header-text">Наша команда</a>
           </li>
           <li>
-            <a href="#" class="header-text">Наша платформа</a>
+            <a href="/about-page.html#vacancies" class="header-text"
+              >Вакансії</a
+            >
+          </li>
+          <li>
+            <a href="/about-page.html#platform" class="header-text"
+              >Наша платформа</a
+            >
           </li>
         </ul>
       </li>
@@ -305,7 +311,7 @@
 
       </main>
 
-      <footer class="footer">
+      <footer id="footer" class="footer">
   <div class="container">
     <div class="footer__body">
       <div class="footer__above">
@@ -314,8 +320,8 @@
             Бажаєте дізнатися більше або розпочати співпрацю?
           </h2>
           <p class="footer__text text">
-            Заповніть нашу контактну форму, і ми з радістю допоможемо
-            вам втілити ваші ідеї в реальність.
+            Заповніть нашу контактну форму, і ми допоможемо втілити ваші ідеї в
+            реальність.
           </p>
         </div>
         <form class="footer__form">
@@ -346,9 +352,20 @@
               placeholder="Контактний номер*"
             />
           </label>
-          <button type="submit" class="footer__btn btn-def">
-            Зв’язатись зі мною
-          </button>
+          <div class="form__bottom">
+            <label class="checkbox">
+              <input type="checkbox" name="agree" />
+              <p>
+                <span
+                  >Я даю згоду на обробку моїх персональних даних.
+                  <br />Ознайомитись з <a href="#">Private Policy</a>.</span
+                >
+              </p>
+            </label>
+            <button type="submit" class="footer__btn btn-def">
+              Зв’язатись з нами
+            </button>
+          </div>
         </form>
       </div>
       <div class="footer__under">
@@ -364,43 +381,57 @@
                 >
                 <ul class="sub-menu">
                   <li>
-                    <a href="mailto:fleximp@gmail.com" class="header-text">fleximp@gmail.com</a>
+                    <a href="mailto:fleximp@gmail.com" class="header-text"
+                      >fleximp@gmail.com</a
+                    >
                   </li>
                   <li>
-                    <a href="tel:08000001100" class="header-text">0 800 000 11 00</a>
+                    <a href="tel:08000001100" class="header-text"
+                      >0 800 000 11 00</a
+                    >
                   </li>
                   <li>
-                    <a href="https://maps.app.goo.gl/dxjbgBepBaQgaq7U7" class="header-text">Ukraine, Kyiv</a>
+                    <a
+                      href="https://maps.app.goo.gl/dxjbgBepBaQgaq7U7"
+                      class="header-text"
+                      >Ukraine, Kyiv</a
+                    >
                   </li>
                 </ul>
               </li>
             </ul>
             <ul class="footer__list">
               <li class="menu-item menu-item-has-children">
-                <a href="#" class="header__menu-link header-text"
-                  >Про компанію</a
+                <a href="/about-page.html" class="header__menu-link header-text"
+                  >Про компанію</a
                 >
                 <ul class="sub-menu">
                   <li>
-                    <a href="#" class="header-text">Про нас</a>
+                    <a href="/about-page.html#about" class="header-text"
+                      >Про нас</a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="header-text">Наша команда</a>
+                    <a href="/about-page.html#team" class="header-text"
+                      >Наша команда</a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="header-text">Вакансії</a>
+                    <a href="/about-page.html#vacancies" class="header-text"
+                      >Вакансії</a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="header-text">Наша платформа</a>
+                    <a href="/about-page.html#platform" class="header-text"
+                      >Наша платформа</a
+                    >
                   </li>
                 </ul>
               </li>
             </ul>
             <ul class="footer__list">
               <li class="menu-item menu-item-has-children">
-                <a href="#" class="header__menu-link header-text"
-                  >Послуги</a
-                >
+                <a href="#" class="header__menu-link header-text">Послуги</a>
                 <ul class="sub-menu">
                   <li>
                     <a href="#" class="header-text">Розробка веб-сайтів</a>
@@ -419,9 +450,7 @@
             </ul>
             <ul class="footer__list">
               <li class="menu-item menu-item-has-children">
-                <a href="#" class="header__menu-link header-text"
-                  >Галузі</a
-                >
+                <a href="#" class="header__menu-link header-text">Галузі</a>
                 <ul class="sub-menu">
                   <li>
                     <a href="#" class="header-text">Фармацевтична галузь</a>
@@ -433,7 +462,9 @@
                     <a href="#" class="header-text">Логістика</a>
                   </li>
                   <li>
-                    <a href="#" class="header-text">Послуги з дотримання GDPR</a>
+                    <a href="#" class="header-text"
+                      >Послуги з дотримання GDPR</a
+                    >
                   </li>
                 </ul>
               </li>
