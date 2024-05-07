@@ -25,6 +25,10 @@
     .header__menu-list {
         padding-top: 1.25em;
         display: block;
+        a {
+            color: #fff !important;
+            opacity: 1 !important;
+        }
         & > .menu-item {
             padding-bottom: 1.88rem;
 
