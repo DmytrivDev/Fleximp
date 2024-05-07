@@ -20,12 +20,6 @@
 		padding-top: 95%;
 		background: #91b3fa;
 		margin-bottom: 1.25rem;
-		img {
-			width: 7rem;
-			height: 7rem;
-			filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(34%)
-				hue-rotate(63deg) brightness(106%) contrast(100%);
-		}
 	}
 	&__info-team {
 	}
@@ -62,10 +56,6 @@
 		&__img-wrapp {
 			padding-top: 90%;
 			margin-bottom: 1rem;
-			img {
-				width: 4.25rem;
-				height: 4.25rem;
-			}
 		}
 		&__name {
 			font-size: 1.125rem;
@@ -73,7 +63,7 @@
 			margin-bottom: 0.25rem;
 		}
 		&__info-descript {
-			font-size: 0.875rem;
+			font-size: 0.8rem;
 			line-height: 1.225rem;
 		}
 		&__btn-wrapp {
@@ -82,13 +72,16 @@
 		&__link {
 			display: flex;
 		}
+		&__btn {
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 }
 @media screen and (max-width: 680px) {
 	.team {
 		&__list {
 			grid-template-columns: repeat(2, 1fr);
-			gap: 1.875rem 1rem;
 			margin-bottom: 1.88rem;
 		}
 		&__btn-wrapp {
