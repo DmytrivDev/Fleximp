@@ -11,12 +11,13 @@
             реальність.
           </p>
         </div>
-        <form class="footer__form">
+        <form class="footer__form submitForm">
           <label for="name">
             <input
               name="name"
               type="text"
               id="name"
+              data-required="true"
               class="footer__input"
               placeholder="Ваше ім’я*"
             />
@@ -26,6 +27,7 @@
               name="email"
               type="email"
               id="email"
+              data-required="true"
               class="footer__input"
               placeholder="Пошта*"
             />
@@ -33,15 +35,16 @@
           <label for="number">
             <input
               name="number"
-              type="number"
+              type="tel"
               id="number"
+              data-required="true"
               class="footer__input"
               placeholder="Контактний номер*"
             />
           </label>
           <div class="form__bottom">
             <label class="checkbox">
-              <input type="checkbox" name="agree" />
+              <input type="checkbox" data-required="true" name="agree" />
               <p>
                 <span
                   >Я даю згоду на обробку моїх персональних даних.
