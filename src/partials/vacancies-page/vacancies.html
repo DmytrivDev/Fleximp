@@ -1,12 +1,24 @@
 <section class="vacancies">
   <div class="container">
     <div class="vacancies__body">
-      <a href="#" class="vacancies__back">Всі вакансії</a>
+      <a href="#" class="vacancies__back">
+        <img src="./img/icon/left.svg" alt="" />
+        <span>Всі вакансії</span>
+      </a>
       <div class="vacancies__wrapp">
         <div class="vacancies__content">
-          <h2 class="vacancies__title sub-title">
-            JavaScript Software Developer
-          </h2>
+          <div class="vacancies__box">
+            <h2 class="vacancies__title sub-title">
+              JavaScript Software Developer
+            </h2>
+            <p class="vacancies__text text">
+              Leo viverra euismod mauris purus. Pulvinar tempor etiam sit
+              imperdiet velit facilisi risus massa. Nulla id nunc urna
+              vestibulum. Leo viverra euismod mauris purus. Pulvinar tempor
+              etiam sit imperdiet velit facilisi risus massa. Nulla id nunc urna
+              vestibulum.
+            </p>
+          </div>
 
           <div class="vacancies__box">
             <h3 class="vacancies__subtitle">Experience Required:</h3>
@@ -73,44 +85,46 @@
           </div>
         </div>
         <form class="vacancies__form">
-          <h3>Apply now</h3>
-          <label for="" class="vacancies__label">
+          <h3 class="vacancies__subtitle">Apply now</h3>
+          <label for="vacancies-name" class="vacancies__label">
             <input
               type="text"
-              name=""
+              name="vacancies-name"
               id="vacancies-name"
               class="vacancies__input"
               placeholder="Ваше ім’я*"
             />
           </label>
-          <label for="" class="vacancies__label">
+          <label for="vacancies-email" class="vacancies__label">
             <input
               type="email"
-              name=""
-              id=""
+              name="vacancies-email"
+              id="vacancies-email"
               class="vacancies__input"
               placeholder="Пошта*"
             />
           </label>
-          <label for="" class="vacancies__label">
+          <label for="vacancies-number" class="vacancies__label">
             <input
               type="number"
-              name=""
-              id=""
+              name="vacancies-number"
+              id="vacancies-number"
               class="vacancies__input"
               placeholder="Контактний номер*"
             />
           </label>
-          <label for="" class="vacancies__label">
+          <label for="vacancies-file" class="vacancies__label">
             <input
               type="file"
-              name=""
-              id=""
-              class="vacancies__input"
+              name="vacancies-file"
+              id="vacancies-file"
+              class="vacancies__input input-file"
               placeholder="Додайте своє CV"
             />
           </label>
-          <button type="submit">Приєднатися до команди</button>
+          <button type="submit" class="vacancies__btn btn-def">
+            Приєднатися до команди
+          </button>
         </form>
       </div>
     </div>
