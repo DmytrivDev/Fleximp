@@ -7,7 +7,7 @@
 	src:
 		url("../../../public/Gilroy-Regular/Gilroy-Regular.eot")
 			format("embedded-opentype"),
-		url("../../../public/Gilroy-Regular/Gilroy-Regular.ttf") format("ttf"),
+		url("../../../public/Gilroy-Regular/Gilroy-Regular.ttf") format("truetype"),
 		url("../../../public/Gilroy-Regular/Gilroy-Regular.woff2") format("woff2");
 }
 @font-face {
@@ -18,7 +18,7 @@
 	src:
 		url("../../../public/Gilroy-Medium/Gilroy-Medium.eot")
 			format("embedded-opentype"),
-		url("../../../public/Gilroy-Medium/Gilroy-Medium.ttf") format("ttf"),
+		url("../../../public/Gilroy-Medium/Gilroy-Medium.ttf") format("truetype"),
 		url("../../../public/Gilroy-Medium/Gilroy-Medium.woff2") format("woff2");
 }
 @font-face {
@@ -29,6 +29,7 @@
 	src:
 		url("../../../public/Gilroy-Semibold/Gilroy-Semibold.eot")
 			format("embedded-opentype"),
-		url("../../../public/Gilroy-SemiBold/Gilroy-Semibold.ttf") format("ttf"),
+		url("../../../public/Gilroy-SemiBold/Gilroy-Semibold.ttf")
+			format("truetype"),
 		url("../../../public/Gilroy-SemiBold/Gilroy-Semibold.woff2") format("woff2");
 }
