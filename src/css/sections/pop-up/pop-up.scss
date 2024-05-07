@@ -7,6 +7,10 @@
 	bottom: 0;
 	background-color: rgba(145, 178, 250, 0.6);
 	z-index: 100;
+	transform: 350ms all;
+
+	visibility: hidden;
+	opacity: 0;
 
 	&__body {
 		position: absolute;
@@ -56,6 +60,13 @@
 		font-weight: 600;
 		line-height: 2.7rem;
 	}
+}
+.pop-up.is-active {
+	visibility: visible;
+	opacity: 1;
+}
+body.modal-open {
+	overflow: hidden;
 }
 
 @media screen and (max-width: 960px) {
