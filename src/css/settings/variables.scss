@@ -94,6 +94,8 @@ body {
 		margin-bottom: 1.88rem;
 		&__text {
 			max-width: 26.875rem;
+			font-size: 1rem;
+			line-height: 1.4rem;
 		}
 	}
 
@@ -133,4 +135,17 @@ body {
 	}
 }
 @media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 960px) {
+	.sec {
+	}
+}
+@media screen and (max-width: 680px) {
+	.sec {
+	}
+}
+@media screen and (max-width: 500px) {
+	.sec {
+	}
 }
