@@ -25,6 +25,8 @@
     "accordion-js": "^3.3.4",
     "copy-text-to-clipboard": "^3.2.0",
     "hamburgers": "^1.2.1",
+    "i": "^0.3.7",
+    "npm": "^10.7.0",
     "sass": "^1.72.0",
     "scroll-to-element": "^2.0.3",
     "slide-element": "^2.3.1",
