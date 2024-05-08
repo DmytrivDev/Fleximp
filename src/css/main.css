@@ -38,5 +38,8 @@
 @import url('./sections/services-page/services-page.scss');
 @import url('./sections/services-page/process.scss');
 
+/* Policy-page  */
+@import url('./sections/policy-page/policy.scss');
+
 /* Footer */
 @import url('./sections/footer/footer.scss');
