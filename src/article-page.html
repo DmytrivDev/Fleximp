@@ -4,19 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
+    <title>Article</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
-  <body class="notHome blogPage">
+  <body class="notHome articlePage">
     <div class="wrapper">
       <load src="partials/header/header.html" />
 
       <main class="main">
-        <section class="blog body-wrapp-page">
+        <section class="article">
+          <div class="container">
+            <div class="article__body">
+              <load src="partials/article-page/article.html" />
+            </div>
+          </div>
+        </section>
+        <section class="blog article__blog-page">
           <div class="container">
             <div class="blog__body">
-              <h2 class="blog__title sub-title">Блог</h2>
               <load src="partials/blog-page/blog.html" />
             </div>
           </div>

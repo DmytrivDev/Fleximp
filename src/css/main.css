@@ -4,6 +4,9 @@
 @import url('./settings/variables.scss');
 @import url('./settings/general.scss');
 
+/* Embeded*/
+@import url('./sections/embeded/embeded.scss');
+
 /* Pop-up */
 @import url('./sections/pop-up/pop-up.scss');
 
@@ -43,6 +46,9 @@
 
 /* Blog-page */
 @import url('./sections/blog-page/blog.scss');
+
+/* Article-page */
+@import url('./sections/article-page/article.scss');
 
 /* Policy-page  */
 @import url('./sections/policy-page/policy.scss');
