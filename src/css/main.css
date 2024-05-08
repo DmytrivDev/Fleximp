@@ -41,6 +41,9 @@
 /* Industry-page */
 @import url('./sections/industry-page/industry.scss');
 
+/* Blog-page */
+@import url('./sections/blog-page/blog.scss');
+
 /* Policy-page  */
 @import url('./sections/policy-page/policy.scss');
 
