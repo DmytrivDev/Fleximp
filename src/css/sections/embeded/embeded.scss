@@ -2,10 +2,6 @@
 	font-size: 1.125em;
 	line-height: 1.4em;
 
-	.embeded-block-bolt {
-		font-weight: 600;
-	}
-
 	& > * {
 		margin-top: 1em;
 
@@ -149,5 +145,35 @@
 			top: 0;
 			height: 100% !important;
 		}
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.embeded {
+		font-size: 1em;
+
+		h3 {
+			font-size: 1.125em;
+			margin-top: 1.667em;
+			margin-bottom: 0.556em;
+		}
+		h4 {
+			font-size: 1em;
+			margin-top: 1.875em;
+			margin-bottom: 0.625em;
+		}
+		ul {
+			li {
+				margin-bottom: 0.625em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 680px) {
+	.embeded {
+	}
+}
+@media screen and (max-width: 500px) {
+	.embeded {
 	}
 }
