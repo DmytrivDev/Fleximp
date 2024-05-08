@@ -1,7 +1,4 @@
 .projects {
-	padding-top: 3.125rem;
-	padding-bottom: 6.25rem;
-
 	&__body {
 	}
 	&__content {
@@ -39,9 +36,6 @@
 
 @media screen and (max-width: 960px) {
 	.projects {
-		padding-top: 1.25rem;
-		padding-bottom: 2.5rem;
-
 		&__content {
 			margin: 1.88rem 0;
 			flex-direction: column;

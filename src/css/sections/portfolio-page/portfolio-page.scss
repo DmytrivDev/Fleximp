@@ -1,16 +1,8 @@
-.portfolio-page {
-	padding-top: 3.125rem;
-	padding-bottom: 6.25rem;
-}
 .portfolio-link-page {
 	display: flex;
 	justify-content: center;
 }
 @media screen and (max-width: 960px) {
-	.portfolio-page {
-		padding-top: 1.25rem;
-		padding-bottom: 2.5rem;
-	}
 	.portfolio-link-page {
 		padding-left: 0;
 		padding-right: 0;
