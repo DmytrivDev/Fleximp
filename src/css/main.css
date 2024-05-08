@@ -38,6 +38,9 @@
 @import url('./sections/services-page/services-page.scss');
 @import url('./sections/services-page/process.scss');
 
+/* Industry-page */
+@import url('./sections/industry-page/industry.scss');
+
 /* Policy-page  */
 @import url('./sections/policy-page/policy.scss');
 

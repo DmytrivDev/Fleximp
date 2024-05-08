@@ -83,8 +83,11 @@
 			display: flex;
 			flex-direction: column;
 			gap: 0;
-			&:nth-child(2) {
+			&:nth-child(odd) {
 				flex-direction: column-reverse;
+			}
+			&:nth-child(even) {
+				flex-direction: column;
 			}
 		}
 		&__img-wrapp {
