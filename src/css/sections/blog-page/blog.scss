@@ -13,6 +13,9 @@
 		&:hover .blog__bg-up {
 			transform: translateY(0);
 		}
+		&:hover .blog__subtitle a {
+			color: #4b6db4;
+		}
 	}
 	&__img-wrapp {
 		position: relative;
@@ -82,6 +85,25 @@
 		font-size: 1.5rem;
 		font-weight: 500;
 		line-height: 1.8rem;
+		a {
+			color: #000028;
+			transition: 150ms all;
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 0.05rem;
+				background-color: #4b6db4;
+				opacity: 0;
+				transition: 150ms all;
+			}
+			&:hover::after {
+				opacity: 1;
+			}
+		}
 	}
 	&__text {
 	}
