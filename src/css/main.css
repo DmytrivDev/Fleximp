@@ -11,7 +11,7 @@
 @import url('./sections/pop-up/pop-up.scss');
 
 /* Erorr */
-@import url('./sections/erorr/erorr.scss');
+@import url('./sections/erorr-page/erorr.scss');
 
 /* Header */
 @import url('./sections/header/header.scss');
