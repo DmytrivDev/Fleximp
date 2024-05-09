@@ -10,6 +10,9 @@
 /* Pop-up */
 @import url('./sections/pop-up/pop-up.scss');
 
+/* Erorr */
+@import url('./sections/erorr/erorr.scss');
+
 /* Header */
 @import url('./sections/header/header.scss');
 @import url('./sections/header/navigation.scss');
