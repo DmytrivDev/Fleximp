@@ -10,7 +10,10 @@
       </div>
       <div class="industry__wrapp">
         <ul class="industry__list">
-          <li class="industry__item">
+          <li id="pharmaceutical" class="industry__item">
+            <div class="industry__img-wrapp">
+              <img src="./img/industries/1.jpg" alt="" class="cover" />
+            </div>
             <div class="industry__content">
               <h3 class="industry__subtitle">Фармацевтична галузь</h3>
               <div class="industry__text-box">
@@ -31,11 +34,8 @@
                 </p>
               </div>
             </div>
-            <div class="industry__img-wrapp">
-              <img src="./img/industries/1.jpg" alt="" class="cover" />
-            </div>
           </li>
-          <li class="industry__item">
+          <li id="ecommerce" class="industry__item">
             <div class="industry__img-wrapp">
               <img src="./img/industries/2.jpg" alt="" class="cover" />
             </div>
@@ -57,7 +57,10 @@
               </div>
             </div>
           </li>
-          <li class="industry__item">
+          <li id="logistics" class="industry__item">
+            <div class="industry__img-wrapp">
+              <img src="./img/industries/3.jpg" alt="" class="cover" />
+            </div>
             <div class="industry__content">
               <h3 class="industry__subtitle">Логістика</h3>
               <div class="industry__text-box">
@@ -76,11 +79,8 @@
                 </p>
               </div>
             </div>
-            <div class="industry__img-wrapp">
-              <img src="./img/industries/3.jpg" alt="" class="cover" />
-            </div>
           </li>
-          <li class="industry__item">
+          <li id="gdpr" class="industry__item">
             <div class="industry__img-wrapp">
               <img src="./img/industries/4.jpg" alt="" class="cover" />
             </div>
@@ -107,7 +107,13 @@
           </li>
         </ul>
         <div class="industry__btn-wrapp">
-          <button class="industry__btn btn-def">Замовити консультацію</button>
+          <button
+            type="button"
+            data-target="footer"
+            class="industry__btn btn-def ankor"
+          >
+            Замовити консультацію
+          </button>
         </div>
       </div>
     </div>

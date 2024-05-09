@@ -14,14 +14,19 @@
 		margin-bottom: 3.12rem;
 	}
 	&__item {
-		display: grid;
+		display: flex;
 		gap: 1.25rem;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: minmax(27rem, 1fr);
+		&:nth-child(odd) {
+			flex-direction: row-reverse;
+		}
+		&:nth-child(even) {
+			flex-direction: row;
+		}
 	}
 	&__content {
 		background-color: #dee8fe;
 		padding: 3.125rem;
+		width: 40rem;
 	}
 	&__subtitle {
 		color: #91b3fa;
@@ -41,6 +46,8 @@
 	}
 	&__img-wrapp {
 		position: relative;
+		width: 40rem;
+		height: 27rem;
 	}
 	&__btn-wrapp {
 		display: flex;
@@ -60,7 +67,7 @@
 			display: flex;
 			gap: 1rem;
 			&:nth-child(odd) {
-				flex-direction: column-reverse;
+				flex-direction: column;
 			}
 			&:nth-child(even) {
 				flex-direction: column;
@@ -68,6 +75,7 @@
 		}
 		&__content {
 			padding: 1.25rem;
+			width: 100%;
 		}
 		&__subtitle {
 			font-size: 1.125rem;
@@ -78,6 +86,8 @@
 			line-height: 1.4rem;
 		}
 		&__img-wrapp {
+			width: 100%;
+			height: auto;
 			padding-top: 60%;
 		}
 		&__btn-wrapp {

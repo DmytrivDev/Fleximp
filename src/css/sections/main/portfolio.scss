@@ -16,6 +16,12 @@
 	&__item {
 		display: flex;
 		gap: 1.25rem;
+		&:nth-child(odd) {
+			flex-direction: row;
+		}
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+		}
 	}
 	&__img-wrapp {
 		flex-shrink: 0;
@@ -80,11 +86,9 @@
 			margin-bottom: 1.875rem;
 		}
 		&__item {
-			display: flex;
-			flex-direction: column;
 			gap: 0;
 			&:nth-child(odd) {
-				flex-direction: column-reverse;
+				flex-direction: column;
 			}
 			&:nth-child(even) {
 				flex-direction: column;

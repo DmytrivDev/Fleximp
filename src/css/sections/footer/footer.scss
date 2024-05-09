@@ -62,8 +62,8 @@
 		img {
 			width: 6.5625rem;
 			height: auto;
-			filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7494%) hue-rotate(134deg)
-				brightness(100%) contrast(102%);
+			filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+				saturate(7494%) hue-rotate(134deg) brightness(100%) contrast(102%);
 		}
 	}
 	&__content {
@@ -113,6 +113,8 @@
 			text-decoration-line: underline;
 		}
 	}
+	&__bottom {
+	}
 }
 .footer-bolt {
 	color: #fff;
@@ -137,26 +139,31 @@
 		&:checked {
 			& + p {
 				&::before {
-					background-color: #91B3FA;
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='26' viewBox='0 0 36 26' fill='none'%3E%3Cpath d='M12.7393 26L0.5 13.6757L3.55982 10.5946L12.7393 19.8378L32.4402 0L35.5 3.08108L12.7393 26Z' fill='white'/%3E%3C/svg%3E");
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: 1.1875rem 0.625rem;
 				}
 			}
 		}
 	}
 
 	p {
-		gap: .75rem;
+		gap: 0.75rem;
 		display: flex;
 		align-items: center;
 		align-content: center;
 		cursor: pointer;
 
 		&::before {
-			width: 1.25rem;
-			min-width: 1.25rem;
-			height: 1.25rem;
-			border: 1px solid #91B3FA;
-			transition: .3s;
 			content: "";
+			width: 1.25rem;
+			height: 1.25rem;
+			border: 1px solid #91b3fa;
+			transition: 0.3s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 
@@ -233,8 +240,8 @@
 			order: 1;
 			img {
 				width: 6.5625rem;
-				filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7494%) hue-rotate(134deg)
-					brightness(100%) contrast(102%);
+				filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+					saturate(7494%) hue-rotate(134deg) brightness(100%) contrast(102%);
 			}
 		}
 		&__content {
@@ -295,8 +302,8 @@
 			order: 1;
 			img {
 				width: 6.5625rem;
-				filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7494%) hue-rotate(134deg)
-					brightness(100%) contrast(102%);
+				filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+					saturate(7494%) hue-rotate(134deg) brightness(100%) contrast(102%);
 			}
 		}
 		&__content {
@@ -338,18 +345,18 @@
 					margin-top: 0.75em;
 					display: none;
 					background: rgba(255, 255, 255, 0.05);
-	
+
 					a {
-						padding: .75rem 1rem;
+						padding: 0.75rem 1rem;
 						font-size: 1.125rem;
 						font-weight: 400;
 						color: #fff;
 						display: block;
 					}
-	
+
 					.current-menu-item {
 						a {
-							background: rgba(255, 255, 255, 0.10);
+							background: rgba(255, 255, 255, 0.1);
 						}
 					}
 				}

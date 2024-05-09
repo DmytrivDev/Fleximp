@@ -13,7 +13,9 @@ export const mobileNav = () => {
     const isItem = target.classList.contains('menu-item-has-children');
 
     if (isItem) {
-      const allItems = currentTarget.querySelectorAll('.menu-item-has-children.opened');
+      const allItems = currentTarget.querySelectorAll(
+        '.menu-item-has-children.opened'
+      );
       const subNav = target.querySelector('.sub-menu');
       toggle(subNav);
       target.classList.toggle('opened');
@@ -29,15 +31,15 @@ export const mobileNav = () => {
   }
 };
 
-
 export const openNav = () => {
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('.nabigation');
-    const body = document.querySelector('body');
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nabigation');
+  const body = document.querySelector('body');
 
-    hamburger.addEventListener('click', () => {
-        toggle(nav);
-        hamburger.classList.toggle('opened');
-        body.classList.toggle('overHideMob');
-    });
-}
+  hamburger.addEventListener('click', event => {
+    event.preventDefault();
+    toggle(nav);
+    hamburger.classList.toggle('opened');
+    body.classList.toggle('overHideMob');
+  });
+};
