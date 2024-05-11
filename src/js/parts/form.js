@@ -38,6 +38,14 @@ export const formFunc = async () => {
       openingPopup();
       form.reset();
     }
+
+    setTimeout(() => {
+      form.reset();
+
+      const filed = form.querySelectorAll('.fileuploadCont ');
+
+      filed.forEach(el => el.classList.remove('changed'));
+    }, 300);
   }
 
   const forms = document.querySelectorAll('.submitForm');
@@ -155,4 +163,45 @@ export const formFunc = async () => {
       openedPopup.classList.remove('opened');
     });
   });
+
+  const fileInputs = document.querySelectorAll('input[type="file"]');
+
+  if (fileInputs) {
+    fileInputs.forEach(el => {
+      const placeholder = el.getAttribute('placeholder');
+      const newInput = document.createElement('div');
+      const inputInner = `<button class="uploadBtn">${placeholder}</button><button class="removeBtn"></button>`;
+
+      newInput.classList.add('fileuploadCont', 'form__input');
+      newInput.innerHTML = inputInner;
+      el.insertAdjacentElement('afterend', newInput);
+
+      const uploadBtn = newInput.querySelector('.uploadBtn');
+      const removeBtn = newInput.querySelector('.removeBtn');
+
+      uploadBtn.addEventListener('click', e => {
+        e.preventDefault();
+
+        el.click();
+      });
+
+      removeBtn.addEventListener('click', e => {
+        e.preventDefault();
+
+        el.value = '';
+        newInput.classList.remove('changed');
+      });
+
+      el.addEventListener('change', e => {
+        const fileName = el.files[0].name;
+
+        if (fileName) {
+          newInput.classList.add('changed');
+          removeBtn.innerHTML = fileName;
+        } else {
+          newInput.classList.remove('changed');
+        }
+      });
+    });
+  }
 };
