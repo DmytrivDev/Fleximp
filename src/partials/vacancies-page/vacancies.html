@@ -113,15 +113,19 @@
               placeholder="Контактний номер*"
             />
           </label>
-          <label for="vacancies-file" class="vacancies__label vacancies__file">
+          <label for="resume" class="vacancies__label vacancies__file">
             Додайте своє CV
             <span>+</span>
             <input
               type="file"
-              name="vacancies-file"
-              id="vacancies-file"
+              name="resume"
+              id="resume"
               class="vacancies__input input-file"
               placeholder="Додайте своє CV"
+              data-required="true"
+              data-er1="Оберіть файл"
+              data-er2="Ваш файл не підходить за параметрами"
+              accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
             />
           </label>
           <button type="submit" class="vacancies__btn btn-def">
