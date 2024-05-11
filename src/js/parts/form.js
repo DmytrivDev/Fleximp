@@ -109,6 +109,33 @@ export const formFunc = async () => {
       }
     }
 
+    if (type === 'file') {
+      const file = field.files[0];
+      const max = 12582912;
+      const allowedExt = ['pdf', 'docx', 'doc'];
+      let isThueExt = false;
+
+      if (file) {
+        const fileExt = file.name
+          .split('.')
+          [file.name.split('.').length - 1].toLowerCase();
+
+        if (allowedExt.includes(fileExt) && file.size < max) {
+          isThueExt = true;
+        }
+      }
+
+      if (!file || !isThueExt) {
+        if (!file) {
+          error.innerHTML = er1;
+        } else {
+          error.innerHTML = er2;
+        }
+
+        errors = true;
+      }
+    }
+
     return errors;
   }
 

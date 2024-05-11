@@ -57,6 +57,38 @@
 			color: rgba(0, 0, 40, 0.4);
 		}
 	}
+	input[type="file"] {
+		display: none;
+	}
+	&__file {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+		width: 100%;
+		background-color: transparent;
+		padding-bottom: 0.75rem;
+		color: rgba(0, 0, 40, 0.4);
+		border-bottom: 1px solid #000028;
+		position: relative;
+		cursor: pointer;
+		span {
+			position: absolute;
+			right: 0;
+			top: 0;
+			color: #fff;
+			font-size: 1.25rem;
+			line-height: 1.75rem;
+			background-color: #91b3fa;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 1.5625rem;
+			height: 1.5625rem;
+			transition: 150ms all;
+		}
+		&:hover span {
+			background-color: #6d90dd;
+		}
+	}
 	&__btn {
 	}
 	.input-file {
