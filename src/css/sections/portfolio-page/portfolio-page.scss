@@ -2,6 +2,9 @@
 	display: flex;
 	justify-content: center;
 }
+.ctis-finished-notice {
+	display: none !important;
+}
 @media screen and (max-width: 960px) {
 	.portfolio-link-page {
 		padding-left: 0;
