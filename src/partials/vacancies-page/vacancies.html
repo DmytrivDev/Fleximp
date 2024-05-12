@@ -84,7 +84,7 @@
             </ul>
           </div>
         </div>
-        <form class="vacancies__form">
+        <form class="vacancies__form submitForm">
           <h3 class="vacancies__subtitle">Apply now</h3>
           <label for="vacancies-name" class="vacancies__label">
             <input
@@ -93,6 +93,7 @@
               id="vacancies-name"
               class="vacancies__input"
               placeholder="Ваше ім’я*"
+              data-required="true"
             />
           </label>
           <label for="vacancies-email" class="vacancies__label">
@@ -102,15 +103,17 @@
               id="vacancies-email"
               class="vacancies__input"
               placeholder="Пошта*"
+              data-required="true"
             />
           </label>
           <label for="vacancies-number" class="vacancies__label">
             <input
-              type="number"
+              type="tel"
               name="vacancies-number"
               id="vacancies-number"
               class="vacancies__input"
               placeholder="Контактний номер*"
+              data-required="true"
             />
           </label>
           <label for="resume" class="vacancies__label vacancies__file">
@@ -124,6 +127,7 @@
               data-er1="Оберіть файл"
               data-er2="Ваш файл не підходить за параметрами"
               accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+              data-required="true"
             />
           </label>
           <button type="submit" class="vacancies__btn btn-def">
@@ -134,3 +138,14 @@
     </div>
   </div>
 </section>
+
+<style>
+  .vacancies__box p,
+  .vacancies__box ul {
+    font-size: 1rem;
+  }
+
+  .vacancies__input.error, .vacancies__label.error {
+    border-color: red;
+  }
+</style>

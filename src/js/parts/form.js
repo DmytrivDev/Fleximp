@@ -44,7 +44,7 @@ export const formFunc = async () => {
 
       const filed = form.querySelectorAll('.fileuploadCont ');
 
-      filed.forEach(el => el.classList.remove('changed'));
+      filed?.forEach(el => el.classList.remove('changed'));
     }, 300);
   }
 
@@ -134,13 +134,8 @@ export const formFunc = async () => {
       }
 
       if (!file || !isThueExt) {
-        if (!file) {
-          error.innerHTML = er1;
-        } else {
-          error.innerHTML = er2;
-        }
-
         errors = true;
+        field.closest('label').classList.add('error');
       }
     }
 
