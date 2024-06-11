@@ -5,6 +5,8 @@
   z-index: 20;
 
   &__body {
+    position: relative;
+    z-index: 110;
   }
   &__nav {
     display: flex;
@@ -142,6 +144,12 @@
       color: #000028;
       background-color: #fff;
     }
+  }
+  .header-acc {
+    display: none;
+  }
+  .acc-modal {
+    display: none;
   }
 }
 .hamburger {
@@ -358,6 +366,40 @@ body {
         &:nth-child(3) {
           transform: translateX(-50%) translateY(-50%) rotate(-45deg);
         }
+      }
+    }
+  }
+
+  .header-acc {
+    &__wrapp {
+    }
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.875rem;
+      height: 1.875rem;
+      position: relative;
+    }
+    &__icon {
+      width: 100%;
+      height: 100%;
+      transition: all 300ms;
+      &.is-active {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+    &__close {
+      position: absolute;
+      filter: brightness(0) saturate(100%) invert(68%) sepia(12%)
+        saturate(1464%) hue-rotate(185deg) brightness(101%) contrast(96%);
+      transition: all 300ms;
+      visibility: hidden;
+      opacity: 0;
+      &.is-active {
+        visibility: visible;
+        opacity: 1;
       }
     }
   }

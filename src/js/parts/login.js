@@ -11,20 +11,22 @@ function closeLoginModal() {
   body.classList.remove('modal-open');
 }
 
-modalBtnOpen.addEventListener('click', () => {
-  modalLogin.classList.add('is-active');
-  body.classList.add('modal-open');
-});
+if (modalLogin) {
+  modalBtnOpen.addEventListener('click', () => {
+    modalLogin.classList.add('is-active');
+    body.classList.add('modal-open');
+  });
 
-modalBtnClose.addEventListener('click', () => {
-  closeLoginModal();
-});
-
-modalLogin.addEventListener('click', e => {
-  if (!e.target.closest('.login__body')) {
+  modalBtnClose.addEventListener('click', () => {
     closeLoginModal();
-  }
-});
+  });
+
+  modalLogin.addEventListener('click', e => {
+    if (!e.target.closest('.login__body')) {
+      closeLoginModal();
+    }
+  });
+}
 
 const inputs = document.querySelectorAll('.login__box input');
 const emailInput = document.getElementById('login-name');
@@ -75,32 +77,36 @@ function validateField(field) {
   }
 }
 
-inputs.forEach(input => {
-  input.addEventListener('blur', () => validateField(input));
-});
+if (modalLogin) {
+  inputs.forEach(input => {
+    input.addEventListener('blur', () => validateField(input));
+  });
 
-checkbox.addEventListener('change', () => {
-  validateField(checkbox);
-});
+  checkbox.addEventListener('change', () => {
+    validateField(checkbox);
+  });
+}
 
 const formLogin = document.querySelector('.login__form');
 
 export function loginFormSumbit() {
-  formLogin.addEventListener('submit', event => {
-    event.preventDefault();
+  if (formLogin) {
+    formLogin.addEventListener('submit', event => {
+      event.preventDefault();
 
-    const validate = validateForm();
+      const validate = validateForm();
 
-    if (!validate) {
-      inputs.forEach(input => {
-        validateField(input);
-      });
-      validateField(checkbox);
-      return;
-    }
+      if (!validate) {
+        inputs.forEach(input => {
+          validateField(input);
+        });
+        validateField(checkbox);
+        return;
+      }
 
-    closeLoginModal();
+      closeLoginModal();
 
-    formLogin.reset();
-  });
+      formLogin.reset();
+    });
+  }
 }

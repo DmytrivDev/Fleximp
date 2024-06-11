@@ -10,6 +10,9 @@
 /* Pop-up */
 @import url('./sections/pop-up/pop-up.scss');
 
+/* Account */
+@import url('./sections/account-page/account.scss');
+
 /* Login */
 @import url('./sections/login/login.scss');
 
@@ -22,6 +25,7 @@
 /* Header */
 @import url('./sections/header/header.scss');
 @import url('./sections/header/navigation.scss');
+@import url('./sections/header/acc-modal.scss');
 
 /* Main */
 @import url('./sections/main/hero.scss');

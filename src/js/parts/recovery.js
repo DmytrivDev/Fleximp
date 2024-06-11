@@ -12,21 +12,23 @@ function closeRecoveryModal() {
   body.classList.remove('modal-open');
 }
 
-modalBtnOpen.addEventListener('click', () => {
-  modalLogin.classList.remove('is-active');
-  modalRecovery.classList.add('is-active');
-  body.classList.add('modal-open');
-});
+if (modalRecovery) {
+  modalBtnOpen.addEventListener('click', () => {
+    modalLogin.classList.remove('is-active');
+    modalRecovery.classList.add('is-active');
+    body.classList.add('modal-open');
+  });
 
-modalBtnClose.addEventListener('click', () => {
-  closeRecoveryModal();
-});
-
-modalRecovery.addEventListener('click', e => {
-  if (!e.target.closest('.recovery__body')) {
+  modalBtnClose.addEventListener('click', () => {
     closeRecoveryModal();
-  }
-});
+  });
+
+  modalRecovery.addEventListener('click', e => {
+    if (!e.target.closest('.recovery__body')) {
+      closeRecoveryModal();
+    }
+  });
+}
 
 const emailInput = document.getElementById('recovery-email');
 
@@ -50,23 +52,27 @@ function validateField(field) {
   }
 }
 
-emailInput.addEventListener('blur', () => validateField(emailInput));
+if (modalRecovery) {
+  emailInput.addEventListener('blur', () => validateField(emailInput));
+}
 
 const formRecovery = document.querySelector('.recovery__form');
 
 export function recoveryFormSumbit() {
-  formRecovery.addEventListener('submit', event => {
-    event.preventDefault();
+  if (formRecovery) {
+    formRecovery.addEventListener('submit', event => {
+      event.preventDefault();
 
-    const validate = validateForm();
+      const validate = validateForm();
 
-    if (!validate) {
-      validateField(emailInput);
-      return;
-    }
+      if (!validate) {
+        validateField(emailInput);
+        return;
+      }
 
-    closeRecoveryModal();
+      closeRecoveryModal();
 
-    formRecovery.reset();
-  });
+      formRecovery.reset();
+    });
+  }
 }
