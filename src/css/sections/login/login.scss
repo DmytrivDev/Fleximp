@@ -65,9 +65,12 @@
       color: #000028;
       border-bottom: 0.0625rem solid #000028;
       padding-bottom: 0.75rem;
-    }
-    &::placeholder {
-      color: rgba(0, 0, 40, 0.4);
+      &::placeholder {
+        color: rgba(0, 0, 40, 0.4);
+      }
+      &.error {
+        border-color: #d41d1d;
+      }
     }
   }
   &__check {
@@ -78,6 +81,9 @@
     gap: 0.75rem;
     input {
       display: none;
+      &.error + span {
+        border-color: #d41d1d;
+      }
     }
     span {
       flex-shrink: 0;
