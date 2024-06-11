@@ -3,7 +3,7 @@ import { mobileNav, openNav } from './parts/navigation';
 import './parts/splide';
 import { scrolling } from './parts/scrolling';
 import './parts/pop-up';
-import './parts/header-acc';
+import './parts/account';
 import { loginFormSumbit } from './parts/login';
 import { recoveryFormSumbit } from './parts/recovery';
 import { formFunc } from './parts/form';

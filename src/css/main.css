@@ -10,9 +10,6 @@
 /* Pop-up */
 @import url('./sections/pop-up/pop-up.scss');
 
-/* Account */
-@import url('./sections/account-page/account.scss');
-
 /* Login */
 @import url('./sections/login/login.scss');
 
@@ -34,6 +31,9 @@
 @import url('./sections/main/portfolio.scss');
 @import url('./sections/main/customers.scss');
 @import url('./sections/main/reviews.scss');
+
+/* Account-page */
+@import url('./sections/account-page/account.scss');
 
 /* About-page */
 @import url('./sections/about-page/about-us.scss');
