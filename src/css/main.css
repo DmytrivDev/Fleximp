@@ -10,12 +10,19 @@
 /* Pop-up */
 @import url('./sections/pop-up/pop-up.scss');
 
+/* Login */
+@import url('./sections/login/login.scss');
+
+/* Recovery */
+@import url('./sections/recovery/recovery.scss');
+
 /* Erorr */
 @import url('./sections/erorr-page/erorr.scss');
 
 /* Header */
 @import url('./sections/header/header.scss');
 @import url('./sections/header/navigation.scss');
+@import url('./sections/header/acc-modal.scss');
 
 /* Main */
 @import url('./sections/main/hero.scss');
@@ -24,6 +31,9 @@
 @import url('./sections/main/portfolio.scss');
 @import url('./sections/main/customers.scss');
 @import url('./sections/main/reviews.scss');
+
+/* Account-page */
+@import url('./sections/account-page/account.scss');
 
 /* About-page */
 @import url('./sections/about-page/about-us.scss');
