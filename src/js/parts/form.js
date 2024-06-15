@@ -18,17 +18,25 @@ export const formFunc = async () => {
   });
 
   async function sendForm(form) {
-    const ajaxurl = '/mail.php';
-    const myFormData = new FormData(form);
+    const ajaxurl = '/wp-content/themes/fleximp/mail.php'; // Замініть на правильний шлях до mail.php
+    const formData = new FormData(form);
 
     try {
-      const response = await axios.post(ajaxurl, myFormData);
-      if (response.data !== 'error') {
+      const response = await axios.post(ajaxurl, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+
+      console.log(response)
+
+      if (response.status === 200) {
         formEnd(form, true);
       } else {
         formEnd(form, false);
       }
     } catch (error) {
+      console.error('Error sending form:', error);
       formEnd(form, false);
     }
   }

@@ -13,12 +13,12 @@ export const openingPopup = () => {
   body.classList.add('modal-open');
 }
 
-modalBtnClose.addEventListener('click', () => {
+modalBtnClose?.addEventListener('click', () => {
   modalPopup.classList.remove('is-active');
   body.classList.remove('modal-open');
 });
 
-modalPopup.addEventListener('click', e => {
+modalPopup?.addEventListener('click', e => {
   if (!e.target.closest('.pop-up__body')) {
     modalPopup.classList.remove('is-active');
     body.classList.remove('modal-open');
