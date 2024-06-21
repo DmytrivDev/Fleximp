@@ -1,4 +1,7 @@
 .industry {
+	.sectuon-info {
+		margin-bottom: 0 !important;
+	}
 	&__body {
 	}
 	&__info {
@@ -10,12 +13,16 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
-		gap: 1.25rem;
+		gap: 0;
 		margin-bottom: 3.12rem;
 	}
 	&__item {
 		display: flex;
+		padding-top: 1.25rem;
 		gap: 1.25rem;
+		&:first-child {
+			padding-top: 3.12rem;
+		}
 		&:nth-child(odd) {
 			flex-direction: row-reverse;
 		}
@@ -59,13 +66,20 @@
 
 @media screen and (max-width: 960px) {
 	.industry {
+		.sectuon-info {
+			margin-bottom: 0;
+		}
 		&__list {
-			gap: 1rem;
+			gap: 0;
 			margin-bottom: 1.88rem;
 		}
 		&__item {
 			display: flex;
+			padding-top: 1rem;
 			gap: 1rem;
+			&:first-child {
+				padding-top: 1.88rem;
+			}
 			&:nth-child(odd) {
 				flex-direction: column;
 			}

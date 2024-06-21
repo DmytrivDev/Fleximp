@@ -37,7 +37,7 @@ const instSecondSlider = () => {
 
   if (slider) {
     const options = {
-      type: 'loop',
+      type: 'slider',
       speed: 1000,
       pagination: false,
       updateOnMove: true,

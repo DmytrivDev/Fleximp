@@ -3,6 +3,10 @@
   background: #000028;
   position: relative;
   z-index: 20;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 
   &__body {
     position: relative;
@@ -56,6 +60,9 @@
     white-space: nowrap;
     z-index: 1;
     transition: 250ms all;
+    a {
+      text-decoration: none !important;
+    }
     .sub-menu {
       opacity: 0;
       visibility: hidden;
@@ -151,6 +158,9 @@
   .acc-modal {
     display: none;
   }
+}
+body {
+  padding-top: 5.85rem;
 }
 .hamburger {
   display: none;
@@ -288,6 +298,7 @@ body {
     }
   }
   body {
+    padding-top: 4.188rem;
     &.notHome {
       .header {
         background: #fff;
